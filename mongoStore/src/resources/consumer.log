@@ -1,0 +1,530 @@
+2022-08-14 21:03:53 INFO  ConsumerConfig:376 - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group1-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group1
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 10000000
+	max.poll.interval.ms = 300000
+	max.poll.records = 10
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-08-14 21:03:53 WARN  ConsumerConfig:384 - The configuration 'kafka.topic' was supplied but isn't a known config.
+2022-08-14 21:03:53 INFO  AppInfoParser:119 - Kafka version: 3.2.1
+2022-08-14 21:03:53 INFO  AppInfoParser:120 - Kafka commitId: b172a0a94f4ebb9f
+2022-08-14 21:03:53 INFO  AppInfoParser:121 - Kafka startTimeMs: 1660491233675
+2022-08-14 21:03:53 INFO  KafkaConsumer:968 - [Consumer clientId=consumer-group1-1, groupId=group1] Subscribed to topic(s): spa
+2022-08-14 21:03:54 INFO  Metadata:402 - [Consumer clientId=consumer-group1-1, groupId=group1] Resetting the last seen epoch of partition spa-0 to 0 since the associated topicId changed from null to vF2RrFdERaOPU8yj_Mw4Nw
+2022-08-14 21:03:54 INFO  Metadata:402 - [Consumer clientId=consumer-group1-1, groupId=group1] Resetting the last seen epoch of partition spa-2 to 0 since the associated topicId changed from null to vF2RrFdERaOPU8yj_Mw4Nw
+2022-08-14 21:03:54 INFO  Metadata:402 - [Consumer clientId=consumer-group1-1, groupId=group1] Resetting the last seen epoch of partition spa-1 to 0 since the associated topicId changed from null to vF2RrFdERaOPU8yj_Mw4Nw
+2022-08-14 21:03:54 INFO  Metadata:287 - [Consumer clientId=consumer-group1-1, groupId=group1] Cluster ID: _6MjzhdTSaGNv9hj7UbCOw
+2022-08-14 21:03:54 INFO  ConsumerCoordinator:884 - [Consumer clientId=consumer-group1-1, groupId=group1] Discovered group coordinator 192.168.1.35:9092 (id: 2147483647 rack: null)
+2022-08-14 21:03:54 INFO  ConsumerCoordinator:553 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
+2022-08-14 21:03:54 INFO  ConsumerCoordinator:1050 - [Consumer clientId=consumer-group1-1, groupId=group1] Request joining group due to: need to re-join with the given member-id: consumer-group1-1-862e791a-1d62-4afc-8bae-eb0404bc866c
+2022-08-14 21:03:54 INFO  ConsumerCoordinator:1050 - [Consumer clientId=consumer-group1-1, groupId=group1] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2022-08-14 21:03:54 INFO  ConsumerCoordinator:553 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
+2022-08-14 21:03:54 INFO  ConsumerCoordinator:614 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully joined group with generation Generation{generationId=3, memberId='consumer-group1-1-862e791a-1d62-4afc-8bae-eb0404bc866c', protocol='range'}
+2022-08-14 21:03:54 INFO  ConsumerCoordinator:702 - [Consumer clientId=consumer-group1-1, groupId=group1] Finished assignment for group at generation 3: {consumer-group1-1-862e791a-1d62-4afc-8bae-eb0404bc866c=Assignment(partitions=[spa-0, spa-1, spa-2])}
+2022-08-14 21:03:54 INFO  ConsumerCoordinator:789 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully synced group in generation Generation{generationId=3, memberId='consumer-group1-1-862e791a-1d62-4afc-8bae-eb0404bc866c', protocol='range'}
+2022-08-14 21:03:54 INFO  ConsumerCoordinator:301 - [Consumer clientId=consumer-group1-1, groupId=group1] Notifying assignor about the new Assignment(partitions=[spa-0, spa-1, spa-2])
+2022-08-14 21:03:54 INFO  ConsumerCoordinator:313 - [Consumer clientId=consumer-group1-1, groupId=group1] Adding newly assigned partitions: spa-0, spa-1, spa-2
+2022-08-14 21:03:54 INFO  ConsumerCoordinator:948 - [Consumer clientId=consumer-group1-1, groupId=group1] Setting offset for partition spa-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.1.35:9092 (id: 0 rack: null)], epoch=0}}
+2022-08-14 21:03:54 INFO  ConsumerCoordinator:948 - [Consumer clientId=consumer-group1-1, groupId=group1] Setting offset for partition spa-1 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[192.168.1.35:9092 (id: 0 rack: null)], epoch=0}}
+2022-08-14 21:03:54 INFO  ConsumerCoordinator:948 - [Consumer clientId=consumer-group1-1, groupId=group1] Setting offset for partition spa-2 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[192.168.1.35:9092 (id: 0 rack: null)], epoch=0}}
+2022-08-14 21:04:53 INFO  mainClass:26 - Polled 1 On Partition [spa-0]
+2022-08-14 21:04:53 INFO  mainClass:34 - Printing record: 20.99.13.186 - - [14/Aug/2022:00:07:43 +0530] "GET /wp-content HTTP/1.0" 200 5005 "https://taylor.net/" "Opera/8.41.(X11; Linux x86_64; dz-BT) Presto/2.9.184 Version/10.00"
+2022-08-14 21:04:55 INFO  mainClass:26 - Polled 1 On Partition [spa-1]
+2022-08-14 21:04:55 INFO  mainClass:34 - Printing record: 20.99.13.186 - - [14/Aug/2022:00:07:43 +0530] "GET /wp-content HTTP/1.0" 200 5005 "https://taylor.net/" "Opera/8.41.(X11; Linux x86_64; dz-BT) Presto/2.9.184 Version/10.00"
+2022-08-14 21:04:58 INFO  mainClass:26 - Polled 1 On Partition [spa-2]
+2022-08-14 21:04:58 INFO  mainClass:34 - Printing record: 19.60.191.225 - - [14/Aug/2022:00:09:57 +0530] "GET /search/tag/list HTTP/1.0" 200 5016 "https://www.wagner.com/" "Mozilla/5.0 (Linux; Android 11) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/22.0.802.0 Safari/532.1"
+2022-08-14 21:05:00 INFO  mainClass:26 - Polled 1 On Partition [spa-2]
+2022-08-14 21:05:00 INFO  mainClass:34 - Printing record: 19.60.191.225 - - [14/Aug/2022:00:09:57 +0530] "GET /search/tag/list HTTP/1.0" 200 5016 "https://www.wagner.com/" "Mozilla/5.0 (Linux; Android 11) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/22.0.802.0 Safari/532.1"
+2022-08-14 21:09:09 INFO  ConsumerConfig:376 - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group1-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group1
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 10000000
+	max.poll.interval.ms = 300000
+	max.poll.records = 10
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-08-14 21:09:09 WARN  ConsumerConfig:384 - The configuration 'kafka.topic' was supplied but isn't a known config.
+2022-08-14 21:09:09 INFO  AppInfoParser:119 - Kafka version: 3.2.1
+2022-08-14 21:09:09 INFO  AppInfoParser:120 - Kafka commitId: b172a0a94f4ebb9f
+2022-08-14 21:09:09 INFO  AppInfoParser:121 - Kafka startTimeMs: 1660491549763
+2022-08-14 21:09:09 INFO  KafkaConsumer:968 - [Consumer clientId=consumer-group1-1, groupId=group1] Subscribed to topic(s): spa
+2022-08-14 21:09:10 INFO  Metadata:402 - [Consumer clientId=consumer-group1-1, groupId=group1] Resetting the last seen epoch of partition spa-0 to 0 since the associated topicId changed from null to vF2RrFdERaOPU8yj_Mw4Nw
+2022-08-14 21:09:10 INFO  Metadata:402 - [Consumer clientId=consumer-group1-1, groupId=group1] Resetting the last seen epoch of partition spa-2 to 0 since the associated topicId changed from null to vF2RrFdERaOPU8yj_Mw4Nw
+2022-08-14 21:09:10 INFO  Metadata:402 - [Consumer clientId=consumer-group1-1, groupId=group1] Resetting the last seen epoch of partition spa-1 to 0 since the associated topicId changed from null to vF2RrFdERaOPU8yj_Mw4Nw
+2022-08-14 21:09:10 INFO  Metadata:287 - [Consumer clientId=consumer-group1-1, groupId=group1] Cluster ID: _6MjzhdTSaGNv9hj7UbCOw
+2022-08-14 21:09:10 INFO  ConsumerCoordinator:884 - [Consumer clientId=consumer-group1-1, groupId=group1] Discovered group coordinator 192.168.1.35:9092 (id: 2147483647 rack: null)
+2022-08-14 21:09:10 INFO  ConsumerCoordinator:553 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
+2022-08-14 21:09:10 INFO  ConsumerCoordinator:1050 - [Consumer clientId=consumer-group1-1, groupId=group1] Request joining group due to: need to re-join with the given member-id: consumer-group1-1-12ef234b-b063-46f6-9d1f-95af55374553
+2022-08-14 21:09:10 INFO  ConsumerCoordinator:1050 - [Consumer clientId=consumer-group1-1, groupId=group1] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2022-08-14 21:09:10 INFO  ConsumerCoordinator:553 - [Consumer clientId=consumer-group1-1, groupId=group1] (Re-)joining group
+2022-08-14 21:09:10 INFO  ConsumerCoordinator:614 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully joined group with generation Generation{generationId=5, memberId='consumer-group1-1-12ef234b-b063-46f6-9d1f-95af55374553', protocol='range'}
+2022-08-14 21:09:10 INFO  ConsumerCoordinator:702 - [Consumer clientId=consumer-group1-1, groupId=group1] Finished assignment for group at generation 5: {consumer-group1-1-12ef234b-b063-46f6-9d1f-95af55374553=Assignment(partitions=[spa-0, spa-1, spa-2])}
+2022-08-14 21:09:10 INFO  ConsumerCoordinator:789 - [Consumer clientId=consumer-group1-1, groupId=group1] Successfully synced group in generation Generation{generationId=5, memberId='consumer-group1-1-12ef234b-b063-46f6-9d1f-95af55374553', protocol='range'}
+2022-08-14 21:09:10 INFO  ConsumerCoordinator:301 - [Consumer clientId=consumer-group1-1, groupId=group1] Notifying assignor about the new Assignment(partitions=[spa-0, spa-1, spa-2])
+2022-08-14 21:09:10 INFO  ConsumerCoordinator:313 - [Consumer clientId=consumer-group1-1, groupId=group1] Adding newly assigned partitions: spa-0, spa-1, spa-2
+2022-08-14 21:09:10 INFO  ConsumerCoordinator:948 - [Consumer clientId=consumer-group1-1, groupId=group1] Setting offset for partition spa-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[192.168.1.35:9092 (id: 0 rack: null)], epoch=0}}
+2022-08-14 21:09:10 INFO  ConsumerCoordinator:948 - [Consumer clientId=consumer-group1-1, groupId=group1] Setting offset for partition spa-1 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[192.168.1.35:9092 (id: 0 rack: null)], epoch=0}}
+2022-08-14 21:09:10 INFO  ConsumerCoordinator:948 - [Consumer clientId=consumer-group1-1, groupId=group1] Setting offset for partition spa-2 to the committed offset FetchPosition{offset=5, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[192.168.1.35:9092 (id: 0 rack: null)], epoch=0}}
+2022-08-14 21:09:35 INFO  mainClass:31 - Polled 1 On Partition [spa-0]
+2022-08-14 21:09:36 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-08-14 21:09:36 INFO  mainClass:44 - Printing record: 20.99.13.186 - - [14/Aug/2022:00:07:43 +0530] "GET /wp-content HTTP/1.0" 200 5005 "https://taylor.net/" "Opera/8.41.(X11; Linux x86_64; dz-BT) Presto/2.9.184 Version/10.00"
+2022-08-14 21:09:36 INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-08-14 21:09:36 INFO  connection:71 - Opened connection [connectionId{localValue:1, serverValue:34}] to localhost:27017
+2022-08-14 21:09:36 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 23]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1990317}
+2022-08-14 21:09:36 INFO  connection:71 - Opened connection [connectionId{localValue:2, serverValue:35}] to localhost:27017
+2022-08-14 21:09:36 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:09:37 INFO  mainClass:31 - Polled 1 On Partition [spa-0]
+2022-08-14 21:09:37 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-08-14 21:09:37 INFO  mainClass:44 - Printing record: 20.99.13.186 - - [14/Aug/2022:00:07:43 +0530] "GET /wp-content HTTP/1.0" 200 5005 "https://taylor.net/" "Opera/8.41.(X11; Linux x86_64; dz-BT) Presto/2.9.184 Version/10.00"
+2022-08-14 21:09:37 INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-08-14 21:09:37 INFO  connection:71 - Opened connection [connectionId{localValue:3, serverValue:36}] to localhost:27017
+2022-08-14 21:09:37 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 23]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=509705}
+2022-08-14 21:09:37 INFO  connection:71 - Opened connection [connectionId{localValue:4, serverValue:37}] to localhost:27017
+2022-08-14 21:09:37 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:09:39 INFO  mainClass:31 - Polled 1 On Partition [spa-2]
+2022-08-14 21:09:39 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-08-14 21:09:39 INFO  mainClass:44 - Printing record: 19.60.191.225 - - [14/Aug/2022:00:09:57 +0530] "GET /search/tag/list HTTP/1.0" 200 5016 "https://www.wagner.com/" "Mozilla/5.0 (Linux; Android 11) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/22.0.802.0 Safari/532.1"
+2022-08-14 21:09:39 INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-08-14 21:09:39 INFO  connection:71 - Opened connection [connectionId{localValue:5, serverValue:38}] to localhost:27017
+2022-08-14 21:09:39 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 23]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=607345}
+2022-08-14 21:09:39 INFO  connection:71 - Opened connection [connectionId{localValue:6, serverValue:39}] to localhost:27017
+2022-08-14 21:09:39 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:09:41 INFO  mainClass:31 - Polled 1 On Partition [spa-2]
+2022-08-14 21:09:41 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-08-14 21:09:41 INFO  mainClass:44 - Printing record: 19.60.191.225 - - [14/Aug/2022:00:09:57 +0530] "GET /search/tag/list HTTP/1.0" 200 5016 "https://www.wagner.com/" "Mozilla/5.0 (Linux; Android 11) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/22.0.802.0 Safari/532.1"
+2022-08-14 21:09:41 INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-08-14 21:09:41 INFO  connection:71 - Opened connection [connectionId{localValue:7, serverValue:40}] to localhost:27017
+2022-08-14 21:09:41 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 23]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=489563}
+2022-08-14 21:09:41 INFO  connection:71 - Opened connection [connectionId{localValue:8, serverValue:41}] to localhost:27017
+2022-08-14 21:09:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:31 - Polled 10 On Partition [spa-1]
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 32.60.53.239 - - [15/Aug/2022:00:13:23 +0530] "GET /apps/cart.jsp?appID=2757 HTTP/1.0" 500 5018 "https://rosales.com/list/login.php" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_12_4; rv:1.9.6.20) Gecko/8838-04-01 04:14:43 Firefox/3.6.7"
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:9, serverValue:42}] to localhost:27017
+2022-08-14 21:14:41 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 23]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=327415}
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:10, serverValue:43}] to localhost:27017
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 2.70.37.50 - - [15/Aug/2022:00:16:24 +0530] "GET /app/main/posts HTTP/1.0" 200 5039 "https://johnson-sanchez.com/blog/tags/tags/login/" "Mozilla/5.0 (X11; Linux i686; rv:1.9.6.20) Gecko/3642-01-20 15:34:43 Firefox/3.8"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 221.59.8.214 - - [15/Aug/2022:00:17:50 +0530] "PUT /wp-admin HTTP/1.0" 200 5004 "https://choi.info/about/" "Mozilla/5.0 (Windows 98; hu-HU; rv:1.9.2.20) Gecko/4963-05-01 00:47:05 Firefox/14.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 155.93.130.28 - - [15/Aug/2022:00:19:15 +0530] "GET /posts/posts/explore HTTP/1.0" 200 5007 "https://stevens-jimenez.info/post.html" "Mozilla/5.0 (iPod; U; CPU iPhone OS 3_2 like Mac OS X; iw-IL) AppleWebKit/531.38.5 (KHTML, like Gecko) Version/3.0.5 Mobile/8B113 Safari/6531.38.5"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 45.254.52.10 - - [15/Aug/2022:00:23:10 +0530] "GET /explore HTTP/1.0" 301 4994 "https://www.bartlett.com/" "Mozilla/5.0 (Linux; Android 7.1.2) AppleWebKit/533.1 (KHTML, like Gecko) Chrome/58.0.817.0 Safari/533.1"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 76.153.175.42 - - [15/Aug/2022:00:26:43 +0530] "GET /list HTTP/1.0" 200 5057 "http://www.knight-smith.com/register/" "Mozilla/5.0 (Windows NT 5.01; ak-GH; rv:1.9.1.20) Gecko/5543-04-17 17:23:30 Firefox/3.8"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 151.197.116.138 - - [15/Aug/2022:00:31:42 +0530] "GET /apps/cart.jsp?appID=7785 HTTP/1.0" 200 4998 "https://conway.com/homepage/" "Mozilla/5.0 (iPad; CPU iPad OS 9_3_5 like Mac OS X) AppleWebKit/535.2 (KHTML, like Gecko) CriOS/62.0.801.0 Mobile/59S492 Safari/535.2"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 117.22.213.203 - - [15/Aug/2022:00:36:10 +0530] "GET /wp-content HTTP/1.0" 200 5018 "http://zimmerman.com/index/" "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_6_5; rv:1.9.5.20) Gecko/7079-02-20 12:06:01 Firefox/11.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 5.23.161.116 - - [15/Aug/2022:00:37:28 +0530] "GET /wp-admin HTTP/1.0" 200 4971 "https://www.conner.net/author/" "Mozilla/5.0 (Macintosh; PPC Mac OS X 10_5_4; rv:1.9.4.20) Gecko/6620-07-02 21:00:58 Firefox/14.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 191.39.11.153 - - [15/Aug/2022:00:40:49 +0530] "GET /wp-admin HTTP/1.0" 200 5013 "http://buck-terry.org/wp-content/category.html" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_2_1 like Mac OS X) AppleWebKit/536.2 (KHTML, like Gecko) CriOS/17.0.895.0 Mobile/53F017 Safari/536.2"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:31 - Polled 10 On Partition [spa-1]
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 212.1.168.0 - - [15/Aug/2022:00:42:41 +0530] "GET /wp-content HTTP/1.0" 200 4998 "http://alvarez-fletcher.biz/category/tag/app/login.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_8; rv:1.9.3.20) Gecko/9782-08-20 23:23:39 Firefox/5.0"
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:11, serverValue:44}] to localhost:27017
+2022-08-14 21:14:41 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 23]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=267102}
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:12, serverValue:45}] to localhost:27017
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 185.55.254.27 - - [15/Aug/2022:00:45:34 +0530] "GET /wp-content HTTP/1.0" 200 5021 "http://www.mckee.com/search/category/search/" "Mozilla/5.0 (Windows 95; gl-ES; rv:1.9.0.20) Gecko/9053-05-14 16:58:26 Firefox/3.8"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 31.36.10.14 - - [15/Aug/2022:00:47:08 +0530] "GET /app/main/posts HTTP/1.0" 200 5020 "https://chung-calhoun.com/main.htm" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/534.2 (KHTML, like Gecko) Chrome/39.0.800.0 Safari/534.2"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 150.20.142.2 - - [15/Aug/2022:00:48:02 +0530] "GET /app/main/posts HTTP/1.0" 200 5003 "http://www.todd-adkins.info/search/" "Mozilla/5.0 (iPhone; CPU iPhone OS 3_1_3 like Mac OS X) AppleWebKit/531.0 (KHTML, like Gecko) CriOS/33.0.820.0 Mobile/73C872 Safari/531.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 94.186.215.193 - - [15/Aug/2022:00:51:27 +0530] "PUT /apps/cart.jsp?appID=3457 HTTP/1.0" 200 4962 "http://www.lowe-wilcox.info/main/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_6 rv:5.0; as-IN) AppleWebKit/531.49.5 (KHTML, like Gecko) Version/5.0.2 Safari/531.49.5"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 46.135.13.151 - - [15/Aug/2022:00:55:57 +0530] "GET /app/main/posts HTTP/1.0" 404 5085 "http://baker.biz/category/terms.htm" "Mozilla/5.0 (Macintosh; PPC Mac OS X 10_8_1) AppleWebKit/534.1 (KHTML, like Gecko) Chrome/39.0.837.0 Safari/534.1"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 61.72.90.40 - - [15/Aug/2022:00:56:57 +0530] "GET /posts/posts/explore HTTP/1.0" 200 4927 "http://ellis.biz/category.html" "Mozilla/5.0 (Windows CE; mag-IN; rv:1.9.0.20) Gecko/9244-02-28 05:43:48 Firefox/3.8"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 111.13.253.215 - - [15/Aug/2022:00:57:32 +0530] "DELETE /search/tag/list HTTP/1.0" 200 5004 "http://taylor.com/about/" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_9_6 rv:4.0; an-ES) AppleWebKit/533.25.7 (KHTML, like Gecko) Version/4.0 Safari/533.25.7"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 65.218.126.56 - - [15/Aug/2022:01:01:00 +0530] "GET /search/tag/list HTTP/1.0" 200 4956 "http://martinez.com/" "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/23.0.857.0 Safari/532.1"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 207.218.78.191 - - [15/Aug/2022:01:04:26 +0530] "DELETE /posts/posts/explore HTTP/1.0" 200 4926 "http://www.bell.biz/" "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_9_0 rv:4.0; ln-CD) AppleWebKit/534.14.5 (KHTML, like Gecko) Version/4.1 Safari/534.14.5"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:31 - Polled 10 On Partition [spa-1]
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 170.47.215.66 - - [15/Aug/2022:01:05:59 +0530] "PUT /wp-content HTTP/1.0" 200 4959 "https://www.simpson.info/search/" "Mozilla/5.0 (Windows NT 6.2; mt-MT; rv:1.9.2.20) Gecko/5130-09-26 22:50:12 Firefox/3.6.17"
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:13, serverValue:46}] to localhost:27017
+2022-08-14 21:14:41 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 23]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=241227}
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:14, serverValue:47}] to localhost:27017
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 30.176.56.204 - - [15/Aug/2022:01:10:34 +0530] "GET /posts/posts/explore HTTP/1.0" 200 5031 "https://www.smith.com/register.php" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_12_3) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/52.0.821.0 Safari/531.2"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 30.1.32.234 - - [15/Aug/2022:01:15:21 +0530] "GET /list HTTP/1.0" 200 4970 "https://www.moore-swanson.com/search/" "Mozilla/5.0 (X11; Linux i686; rv:1.9.7.20) Gecko/6446-05-06 11:13:38 Firefox/11.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 5.28.246.112 - - [15/Aug/2022:01:18:27 +0530] "GET /app/main/posts HTTP/1.0" 200 4971 "https://ramirez-james.info/login.php" "Mozilla/5.0 (Windows NT 5.01) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/22.0.832.0 Safari/535.2"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 219.184.8.51 - - [15/Aug/2022:01:23:06 +0530] "GET /wp-content HTTP/1.0" 301 4983 "https://www.taylor.biz/post.php" "Opera/9.59.(Windows CE; mt-MT) Presto/2.9.188 Version/12.00"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 192.92.149.177 - - [15/Aug/2022:01:26:30 +0530] "DELETE /apps/cart.jsp?appID=3704 HTTP/1.0" 200 4939 "https://www.wright.info/homepage/" "Mozilla/5.0 (Macintosh; PPC Mac OS X 10_6_4; rv:1.9.5.20) Gecko/3600-12-04 16:07:19 Firefox/6.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 25.147.33.97 - - [15/Aug/2022:01:28:48 +0530] "PUT /apps/cart.jsp?appID=5536 HTTP/1.0" 200 4988 "https://www.richards-hernandez.biz/tag/terms/" "Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/4.1)"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 82.15.198.169 - - [15/Aug/2022:01:29:39 +0530] "DELETE /list HTTP/1.0" 200 5093 "https://davis.org/home.php" "Mozilla/5.0 (iPod; U; CPU iPhone OS 4_1 like Mac OS X; pap-CW) AppleWebKit/531.9.3 (KHTML, like Gecko) Version/3.0.5 Mobile/8B113 Safari/6531.9.3"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 217.88.121.148 - - [15/Aug/2022:01:32:03 +0530] "GET /wp-content HTTP/1.0" 200 4967 "http://long-liu.org/faq.jsp" "Mozilla/5.0 (Android 2.2.3; Mobile; rv:62.0) Gecko/62.0 Firefox/62.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 79.53.236.60 - - [15/Aug/2022:01:35:19 +0530] "GET /search/tag/list HTTP/1.0" 200 4987 "http://www.white.com/" "Mozilla/5.0 (Windows NT 5.2; sa-IN; rv:1.9.1.20) Gecko/4779-04-04 21:30:59 Firefox/3.8"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:31 - Polled 10 On Partition [spa-0]
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 72.87.161.85 - - [14/Aug/2022:21:14:55 +0530] "GET /search/tag/list HTTP/1.0" 200 4983 "http://www.fleming.biz/main.htm" "Mozilla/5.0 (Linux; Android 3.2.1) AppleWebKit/535.0 (KHTML, like Gecko) Chrome/36.0.895.0 Safari/535.0"
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:15, serverValue:48}] to localhost:27017
+2022-08-14 21:14:41 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 23]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=251443}
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:16, serverValue:49}] to localhost:27017
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 42.205.191.17 - - [14/Aug/2022:21:15:29 +0530] "GET /search/tag/list HTTP/1.0" 200 4966 "http://www.davis-long.com/homepage.asp" "Mozilla/5.0 (Windows 98; lzh-TW; rv:1.9.2.20) Gecko/8153-12-18 09:31:50 Firefox/8.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 167.141.113.240 - - [14/Aug/2022:21:16:24 +0530] "GET /apps/cart.jsp?appID=5590 HTTP/1.0" 404 5054 "http://www.lucas-smith.com/categories/list/about/" "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_6_6; rv:1.9.4.20) Gecko/5213-07-31 17:40:37 Firefox/3.6.4"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 59.230.152.2 - - [14/Aug/2022:21:18:45 +0530] "POST /search/tag/list HTTP/1.0" 200 5007 "http://www.smith.com/" "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_10_9) AppleWebKit/533.1 (KHTML, like Gecko) Chrome/63.0.843.0 Safari/533.1"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 164.189.252.153 - - [14/Aug/2022:21:20:13 +0530] "GET /wp-content HTTP/1.0" 200 4975 "http://johnston.com/tag/faq/" "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_5 like Mac OS X) AppleWebKit/534.0 (KHTML, like Gecko) FxiOS/17.5d4805.0 Mobile/73V274 Safari/534.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 73.121.107.51 - - [14/Aug/2022:21:22:14 +0530] "GET /search/tag/list HTTP/1.0" 200 4992 "http://www.ryan.info/wp-content/category/wp-content/homepage/" "Mozilla/5.0 (iPad; CPU iPad OS 9_3_6 like Mac OS X) AppleWebKit/531.1 (KHTML, like Gecko) FxiOS/18.5z4402.0 Mobile/78F698 Safari/531.1"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 56.155.186.54 - - [14/Aug/2022:21:24:37 +0530] "GET /apps/cart.jsp?appID=1179 HTTP/1.0" 200 4965 "http://brown-boyd.org/list/main/" "Mozilla/5.0 (X11; Linux i686; rv:1.9.7.20) Gecko/5356-11-22 14:37:33 Firefox/3.6.4"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 101.225.105.46 - - [14/Aug/2022:21:26:44 +0530] "GET /app/main/posts HTTP/1.0" 200 5054 "http://cox.com/" "Mozilla/5.0 (Windows CE) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/17.0.833.0 Safari/535.2"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 223.102.254.8 - - [14/Aug/2022:21:31:14 +0530] "GET /search/tag/list HTTP/1.0" 200 5068 "http://www.lee.com/register.asp" "Mozilla/5.0 (Macintosh; PPC Mac OS X 10_10_7; rv:1.9.6.20) Gecko/7334-02-05 22:19:32 Firefox/3.6.8"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 110.210.145.38 - - [14/Aug/2022:21:31:44 +0530] "GET /search/tag/list HTTP/1.0" 200 5049 "http://brady.org/tag/main/faq.html" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.0 (KHTML, like Gecko) Chrome/33.0.804.0 Safari/534.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:31 - Polled 10 On Partition [spa-0]
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 74.127.249.177 - - [14/Aug/2022:21:34:41 +0530] "GET /posts/posts/explore HTTP/1.0" 200 5083 "https://dyer.com/search/homepage.htm" "Mozilla/5.0 (Android 4.3.1; Mobile; rv:61.0) Gecko/61.0 Firefox/61.0"
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:17, serverValue:50}] to localhost:27017
+2022-08-14 21:14:41 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 23]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=236262}
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:18, serverValue:51}] to localhost:27017
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 5.97.117.216 - - [14/Aug/2022:21:36:39 +0530] "PUT /explore HTTP/1.0" 200 5055 "https://www.foster-wiggins.com/categories/posts/app/category/" "Mozilla/5.0 (Android 1.5; Mobile; rv:20.0) Gecko/20.0 Firefox/20.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 167.100.20.141 - - [14/Aug/2022:21:39:34 +0530] "GET /apps/cart.jsp?appID=1662 HTTP/1.0" 200 4999 "https://www.yang.com/categories/wp-content/login.htm" "Mozilla/5.0 (compatible; MSIE 5.0; Windows CE; Trident/5.1)"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 85.173.141.187 - - [14/Aug/2022:21:42:43 +0530] "GET /app/main/posts HTTP/1.0" 200 5028 "http://www.jackson-vega.com/" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_8_3) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/50.0.832.0 Safari/535.1"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 140.212.162.57 - - [14/Aug/2022:21:45:37 +0530] "GET /explore HTTP/1.0" 200 5094 "http://www.horn.com/categories/tag/index/" "Mozilla/5.0 (X11; Linux x86_64; rv:1.9.7.20) Gecko/3385-10-10 03:01:47 Firefox/3.8"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 84.138.148.158 - - [14/Aug/2022:21:46:28 +0530] "GET /explore HTTP/1.0" 200 4977 "http://www.nelson-david.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6 rv:5.0; hak-TW) AppleWebKit/531.14.3 (KHTML, like Gecko) Version/5.0.1 Safari/531.14.3"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 48.140.9.24 - - [14/Aug/2022:21:50:43 +0530] "GET /search/tag/list HTTP/1.0" 200 4926 "https://www.hendrix-crawford.com/posts/posts/tag/terms/" "Mozilla/5.0 (iPad; CPU iPad OS 10_3_3 like Mac OS X) AppleWebKit/532.1 (KHTML, like Gecko) FxiOS/18.1p1190.0 Mobile/11K441 Safari/532.1"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 73.124.183.99 - - [14/Aug/2022:21:54:13 +0530] "PUT /apps/cart.jsp?appID=3068 HTTP/1.0" 200 4946 "http://gordon.com/main/list/posts/author.php" "Opera/9.83.(Windows NT 6.0; bs-BA) Presto/2.9.187 Version/11.00"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 73.109.28.77 - - [14/Aug/2022:21:56:53 +0530] "GET /explore HTTP/1.0" 200 4997 "https://www.flores-garza.biz/" "Mozilla/5.0 (X11; Linux x86_64; rv:1.9.5.20) Gecko/8104-03-13 14:36:18 Firefox/4.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 2.55.70.72 - - [14/Aug/2022:21:57:58 +0530] "GET /wp-admin HTTP/1.0" 200 4959 "http://www.pitts-garcia.com/search/author/" "Mozilla/5.0 (iPad; CPU iPad OS 9_3_6 like Mac OS X) AppleWebKit/532.2 (KHTML, like Gecko) CriOS/51.0.846.0 Mobile/66P228 Safari/532.2"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:31 - Polled 10 On Partition [spa-0]
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 34.203.103.31 - - [14/Aug/2022:22:01:40 +0530] "GET /list HTTP/1.0" 200 4921 "http://www.robinson-young.info/home.php" "Mozilla/5.0 (X11; Linux x86_64; rv:1.9.7.20) Gecko/3502-11-15 21:40:21 Firefox/3.8"
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:19, serverValue:52}] to localhost:27017
+2022-08-14 21:14:41 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 23]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=256344}
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:20, serverValue:53}] to localhost:27017
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 116.212.122.131 - - [14/Aug/2022:22:05:31 +0530] "POST /wp-content HTTP/1.0" 404 4945 "http://barry.com/" "Mozilla/5.0 (iPad; CPU iPad OS 7_1_2 like Mac OS X) AppleWebKit/533.2 (KHTML, like Gecko) FxiOS/11.4e7377.0 Mobile/28H715 Safari/533.2"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 113.205.2.177 - - [14/Aug/2022:22:07:38 +0530] "GET /wp-admin HTTP/1.0" 200 5030 "https://bowman.com/tags/categories/login.jsp" "Mozilla/5.0 (X11; Linux x86_64; rv:1.9.6.20) Gecko/6077-11-02 22:47:58 Firefox/3.8"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 46.193.120.253 - - [14/Aug/2022:22:12:17 +0530] "PUT /wp-admin HTTP/1.0" 200 5009 "https://clayton-davis.com/search/" "Mozilla/5.0 (Linux; Android 3.2.2) AppleWebKit/534.1 (KHTML, like Gecko) Chrome/40.0.880.0 Safari/534.1"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 44.138.98.208 - - [14/Aug/2022:22:15:48 +0530] "GET /wp-content HTTP/1.0" 301 4985 "http://sweeney.biz/terms/" "Mozilla/5.0 (Macintosh; PPC Mac OS X 10_7_2 rv:3.0; sq-AL) AppleWebKit/533.29.5 (KHTML, like Gecko) Version/5.0 Safari/533.29.5"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 41.181.182.216 - - [14/Aug/2022:22:16:20 +0530] "PUT /apps/cart.jsp?appID=6721 HTTP/1.0" 404 5024 "http://henry-burton.biz/tags/wp-content/main/" "Mozilla/5.0 (Android 4.2; Mobile; rv:14.0) Gecko/14.0 Firefox/14.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 216.215.128.240 - - [14/Aug/2022:22:18:25 +0530] "GET /apps/cart.jsp?appID=4153 HTTP/1.0" 200 4990 "https://harris.com/tags/posts/login/" "Mozilla/5.0 (X11; Linux i686; rv:1.9.6.20) Gecko/9912-02-22 18:20:18 Firefox/4.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 124.134.130.213 - - [14/Aug/2022:22:20:38 +0530] "GET /search/tag/list HTTP/1.0" 200 4954 "http://rodriguez.com/explore/about/" "Opera/8.47.(Windows NT 6.1; lo-LA) Presto/2.9.170 Version/11.00"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 223.229.213.134 - - [14/Aug/2022:22:21:41 +0530] "DELETE /app/main/posts HTTP/1.0" 200 4924 "http://www.wallace-hughes.com/register/" "Mozilla/5.0 (Windows; U; Windows NT 5.1) AppleWebKit/534.37.6 (KHTML, like Gecko) Version/4.0.1 Safari/534.37.6"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 164.36.44.74 - - [14/Aug/2022:22:23:18 +0530] "GET /search/tag/list HTTP/1.0" 200 5003 "https://www.orr.com/category/search/index.html" "Mozilla/5.0 (Windows NT 5.2) AppleWebKit/536.2 (KHTML, like Gecko) Chrome/37.0.855.0 Safari/536.2"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:31 - Polled 10 On Partition [spa-0]
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 103.146.52.232 - - [14/Aug/2022:22:27:16 +0530] "PUT /search/tag/list HTTP/1.0" 200 5146 "http://www.sawyer-gomez.com/categories/privacy/" "Mozilla/5.0 (X11; Linux x86_64; rv:1.9.5.20) Gecko/8962-04-19 08:57:01 Firefox/3.6.17"
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:21, serverValue:54}] to localhost:27017
+2022-08-14 21:14:41 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 23]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=218617}
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:22, serverValue:55}] to localhost:27017
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 83.249.136.22 - - [14/Aug/2022:22:30:37 +0530] "PUT /app/main/posts HTTP/1.0" 200 5036 "http://www.king.biz/terms/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6 rv:4.0; ig-NG) AppleWebKit/531.5.3 (KHTML, like Gecko) Version/4.0.3 Safari/531.5.3"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 203.238.171.224 - - [14/Aug/2022:22:34:21 +0530] "PUT /apps/cart.jsp?appID=6581 HTTP/1.0" 200 5035 "https://www.shepherd.com/search/posts/main/index/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/532.2 (KHTML, like Gecko) Chrome/33.0.834.0 Safari/532.2"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 71.228.124.120 - - [14/Aug/2022:22:35:11 +0530] "GET /wp-content HTTP/1.0" 301 4926 "http://www.walker.net/privacy.html" "Mozilla/5.0 (X11; Linux x86_64; rv:1.9.6.20) Gecko/6564-09-03 04:29:33 Firefox/3.8"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 40.182.64.104 - - [14/Aug/2022:22:37:01 +0530] "PUT /wp-content HTTP/1.0" 200 4988 "https://www.rich.net/blog/search/category.htm" "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_6_7) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/54.0.815.0 Safari/532.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 83.95.236.79 - - [14/Aug/2022:22:41:09 +0530] "PUT /wp-content HTTP/1.0" 200 4998 "https://williams.org/tag/wp-content/index.html" "Mozilla/5.0 (Macintosh; PPC Mac OS X 10_6_1 rv:6.0; dz-BT) AppleWebKit/532.18.3 (KHTML, like Gecko) Version/5.0.1 Safari/532.18.3"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 192.158.80.50 - - [14/Aug/2022:22:41:44 +0530] "GET /wp-content HTTP/1.0" 200 5053 "https://shelton.com/privacy.htm" "Mozilla/5.0 (X11; Linux x86_64; rv:1.9.6.20) Gecko/5024-01-29 21:23:15 Firefox/3.6.3"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 193.98.179.111 - - [14/Aug/2022:22:46:34 +0530] "GET /list HTTP/1.0" 200 5052 "http://tucker.com/register/" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_10_4; rv:1.9.3.20) Gecko/9011-12-11 10:51:15 Firefox/3.8"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 155.88.253.90 - - [14/Aug/2022:22:49:25 +0530] "GET /wp-content HTTP/1.0" 200 5046 "https://anderson.com/search/home.html" "Mozilla/5.0 (Android 4.0.1; Mobile; rv:13.0) Gecko/13.0 Firefox/13.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 53.164.249.75 - - [14/Aug/2022:22:50:19 +0530] "GET /posts/posts/explore HTTP/1.0" 200 4964 "http://www.ortiz-weaver.org/explore/list/search/index/" "Mozilla/5.0 (X11; Linux x86_64; rv:1.9.5.20) Gecko/9605-01-19 02:43:31 Firefox/3.6.2"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:31 - Polled 10 On Partition [spa-0]
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 161.62.184.180 - - [14/Aug/2022:22:51:33 +0530] "GET /app/main/posts HTTP/1.0" 200 5006 "http://lutz.com/author.asp" "Opera/9.75.(X11; Linux i686; ckb-IQ) Presto/2.9.175 Version/11.00"
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:23, serverValue:56}] to localhost:27017
+2022-08-14 21:14:41 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 23]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=201055}
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:24, serverValue:57}] to localhost:27017
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 148.197.128.128 - - [14/Aug/2022:22:53:32 +0530] "GET /search/tag/list HTTP/1.0" 200 4972 "http://www.hart.com/explore/privacy/" "Mozilla/5.0 (Android 7.1.1; Mobile; rv:51.0) Gecko/51.0 Firefox/51.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 70.105.207.25 - - [14/Aug/2022:22:57:36 +0530] "GET /explore HTTP/1.0" 200 4969 "https://www.woods.com/index.html" "Mozilla/5.0 (Android 4.0; Mobile; rv:51.0) Gecko/51.0 Firefox/51.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 109.140.121.211 - - [14/Aug/2022:22:59:00 +0530] "GET /wp-content HTTP/1.0" 200 4913 "http://www.williams.com/homepage/" "Mozilla/5.0 (Windows 98) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/38.0.818.0 Safari/532.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 167.225.79.201 - - [14/Aug/2022:23:02:47 +0530] "PUT /apps/cart.jsp?appID=2113 HTTP/1.0" 200 5029 "https://mclean.com/list/tags/about/" "Mozilla/5.0 (Windows NT 10.0; ps-AF; rv:1.9.2.20) Gecko/5641-05-19 15:24:12 Firefox/3.8"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 90.15.194.120 - - [14/Aug/2022:23:06:37 +0530] "GET /apps/cart.jsp?appID=1681 HTTP/1.0" 200 4938 "https://www.goodwin.net/" "Mozilla/5.0 (Linux; Android 2.3) AppleWebKit/531.1 (KHTML, like Gecko) Chrome/54.0.801.0 Safari/531.1"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 68.117.248.174 - - [14/Aug/2022:23:09:59 +0530] "POST /explore HTTP/1.0" 200 4954 "https://fitzgerald-page.info/" "Mozilla/5.0 (Windows NT 10.0; brx-IN; rv:1.9.2.20) Gecko/2031-09-17 20:27:37 Firefox/3.6.11"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 108.89.84.253 - - [14/Aug/2022:23:12:08 +0530] "DELETE /apps/cart.jsp?appID=7181 HTTP/1.0" 200 5004 "http://brown.com/" "Opera/8.30.(X11; Linux x86_64; nhn-MX) Presto/2.9.188 Version/12.00"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 47.38.217.181 - - [14/Aug/2022:23:15:54 +0530] "GET /search/tag/list HTTP/1.0" 200 4943 "https://beasley-warner.com/tags/tag/faq/" "Mozilla/5.0 (Windows NT 5.0) AppleWebKit/533.1 (KHTML, like Gecko) Chrome/41.0.862.0 Safari/533.1"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 88.171.141.84 - - [14/Aug/2022:23:19:00 +0530] "POST /wp-admin HTTP/1.0" 200 5104 "http://wang-gonzalez.com/category/search/" "Mozilla/5.0 (Windows; U; Windows NT 5.2) AppleWebKit/531.1.7 (KHTML, like Gecko) Version/4.1 Safari/531.1.7"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:31 - Polled 10 On Partition [spa-0]
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 85.227.81.221 - - [14/Aug/2022:23:22:22 +0530] "GET /app/main/posts HTTP/1.0" 404 5066 "https://www.jordan.com/list/search/category/" "Mozilla/5.0 (iPad; CPU iPad OS 14_2_1 like Mac OS X) AppleWebKit/534.2 (KHTML, like Gecko) CriOS/32.0.822.0 Mobile/03Y526 Safari/534.2"
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:25, serverValue:58}] to localhost:27017
+2022-08-14 21:14:41 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 23]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=209129}
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:26, serverValue:59}] to localhost:27017
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 205.75.211.34 - - [14/Aug/2022:23:23:21 +0530] "DELETE /search/tag/list HTTP/1.0" 200 4932 "https://www.peterson.com/author/" "Opera/9.20.(Windows NT 5.0; byn-ER) Presto/2.9.166 Version/10.00"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 42.82.106.143 - - [14/Aug/2022:23:25:13 +0530] "GET /explore HTTP/1.0" 200 4959 "https://www.spence-cunningham.com/category/" "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_10_5) AppleWebKit/533.2 (KHTML, like Gecko) Chrome/23.0.803.0 Safari/533.2"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 170.220.162.245 - - [14/Aug/2022:23:27:04 +0530] "GET /search/tag/list HTTP/1.0" 200 4940 "https://herman-gross.com/" "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_9_6; rv:1.9.6.20) Gecko/8728-07-14 05:46:25 Firefox/5.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 68.223.154.229 - - [14/Aug/2022:23:29:56 +0530] "PUT /wp-admin HTTP/1.0" 200 4980 "https://roman.org/terms.asp" "Mozilla/5.0 (Windows; U; Windows NT 5.0) AppleWebKit/532.38.6 (KHTML, like Gecko) Version/5.0.2 Safari/532.38.6"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 116.178.43.77 - - [14/Aug/2022:23:34:08 +0530] "POST /list HTTP/1.0" 200 4983 "http://www.mosley-solis.org/" "Mozilla/5.0 (Windows NT 5.0; am-ET; rv:1.9.2.20) Gecko/4220-08-16 11:36:18 Firefox/3.6.10"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 109.216.208.245 - - [14/Aug/2022:23:36:59 +0530] "PUT /wp-content HTTP/1.0" 200 5030 "http://smith.com/tag/category/blog/index.php" "Mozilla/5.0 (Android 2.3; Mobile; rv:21.0) Gecko/21.0 Firefox/21.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 149.156.193.96 - - [14/Aug/2022:23:39:37 +0530] "GET /app/main/posts HTTP/1.0" 404 5003 "https://torres-rosales.com/category/tag/search/homepage.php" "Opera/8.39.(Windows NT 5.0; tr-TR) Presto/2.9.164 Version/10.00"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 78.87.88.228 - - [14/Aug/2022:23:42:27 +0530] "DELETE /search/tag/list HTTP/1.0" 200 4974 "http://glenn.com/index.php" "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_9 rv:2.0; kok-IN) AppleWebKit/535.34.5 (KHTML, like Gecko) Version/4.0.1 Safari/535.34.5"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 115.238.138.23 - - [14/Aug/2022:23:46:02 +0530] "PUT /wp-admin HTTP/1.0" 200 5050 "https://allen.com/terms.asp" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.2 (KHTML, like Gecko) Chrome/31.0.842.0 Safari/534.2"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:31 - Polled 10 On Partition [spa-0]
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 42.188.53.19 - - [14/Aug/2022:23:50:33 +0530] "DELETE /wp-content HTTP/1.0" 200 4936 "http://reyes.org/home.asp" "Mozilla/5.0 (Linux; Android 2.3.6) AppleWebKit/536.2 (KHTML, like Gecko) Chrome/36.0.853.0 Safari/536.2"
+2022-08-14 21:14:41 INFO  cluster:71 - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:27, serverValue:60}] to localhost:27017
+2022-08-14 21:14:41 INFO  cluster:71 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 23]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=162822}
+2022-08-14 21:14:41 INFO  connection:71 - Opened connection [connectionId{localValue:28, serverValue:61}] to localhost:27017
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 187.50.141.173 - - [14/Aug/2022:23:54:05 +0530] "GET /search/tag/list HTTP/1.0" 200 5018 "http://www.johnson.com/faq/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/531.0 (KHTML, like Gecko) Chrome/31.0.885.0 Safari/531.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 221.124.20.70 - - [14/Aug/2022:23:58:21 +0530] "DELETE /explore HTTP/1.0" 200 5023 "http://www.rose.biz/" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.0 (KHTML, like Gecko) Chrome/43.0.888.0 Safari/536.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 83.14.3.75 - - [14/Aug/2022:23:58:57 +0530] "DELETE /apps/cart.jsp?appID=3242 HTTP/1.0" 200 5016 "http://roach-edwards.net/posts/posts/tags/register/" "Mozilla/5.0 (Windows; U; Windows NT 6.1) AppleWebKit/532.3.1 (KHTML, like Gecko) Version/4.0.5 Safari/532.3.1"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 162.250.186.47 - - [14/Aug/2022:23:59:57 +0530] "GET /list HTTP/1.0" 200 4978 "http://www.barnett.com/terms.html" "Mozilla/5.0 (Windows NT 10.0; bhb-IN; rv:1.9.2.20) Gecko/7994-07-19 00:38:15 Firefox/3.6.1"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 27.247.134.33 - - [15/Aug/2022:00:04:28 +0530] "GET /apps/cart.jsp?appID=6775 HTTP/1.0" 200 5017 "http://www.ward.com/" "Mozilla/5.0 (Android 2.3.5; Mobile; rv:42.0) Gecko/42.0 Firefox/42.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 53.123.240.24 - - [15/Aug/2022:00:05:53 +0530] "PUT /list HTTP/1.0" 200 5022 "http://www.osborne.biz/posts/posts/app/homepage.html" "Mozilla/5.0 (Android 4.4.4; Mobile; rv:49.0) Gecko/49.0 Firefox/49.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 182.62.48.127 - - [15/Aug/2022:00:07:04 +0530] "POST /posts/posts/explore HTTP/1.0" 200 4997 "http://ritter.com/category/categories/categories/terms/" "Mozilla/5.0 (Windows 98; Win 9x 4.90; pt-PT; rv:1.9.0.20) Gecko/9781-07-13 20:29:23 Firefox/5.0"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 85.224.159.150 - - [15/Aug/2022:00:09:36 +0530] "DELETE /explore HTTP/1.0" 500 5077 "http://www.johnson-lindsey.info/search/home/" "Mozilla/5.0 (Macintosh; PPC Mac OS X 10_9_4) AppleWebKit/531.1 (KHTML, like Gecko) Chrome/19.0.824.0 Safari/531.1"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
+2022-08-14 21:14:41 INFO  mainClass:44 - Printing record: 29.216.132.230 - - [15/Aug/2022:00:11:07 +0530] "PUT /apps/cart.jsp?appID=9803 HTTP/1.0" 200 5020 "http://www.knox.org/" "Mozilla/5.0 (compatible; MSIE 8.0; Windows 95; Trident/4.1)"
+2022-08-14 21:14:41 INFO  mainClass:51 - Record inserted successfully
